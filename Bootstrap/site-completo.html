@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
    <style>
      .tm-social {
        width: 50px;
@@ -16,48 +18,50 @@
     </style>
 
   <link rel="icon" type="imagem/png" href="assets/img/bob.png" />
-  <meta name="theme-color" content="#FFFF00" />
+  <meta name="theme-color" content="#ffcc00" />
     <title>Bob Esponja</title>
   </head>
   <body>
-
+    
 <!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"  style="background-color: #ffff00;">
+  <a class="navbar-brand" href="#" >Bob Esponja</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-warning bg-warning">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Ação</a>
-                <a class="dropdown-item" href="#">Outra ação</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Algo mais aqui</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Ação</a>
+          <a class="dropdown-item" href="#">Outra ação</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Algo mais aqui</a>
         </div>
-      </nav>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Desativado</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+    
       <!--/navbar-->
 
       <!--Carousel-->
@@ -90,26 +94,26 @@
       <!--/Carousel-->
 
       <!--jumbotron-->
-      <div class="jumbotron bg-primary text-white">
-        <h1 class="display-4">Olá, mundo!</h1>
-        <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.</p>
-        <hr class="my-4 bg-light">
-        <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
-        <a class="btn btn-outline-light btn-lg" href="#" role="button">Leia mais</a>
+      <div class="jumbotron bg-primary text-white" >
+        <h1 class="display-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"><b>Bob Esponja: O Incrível Resgate</b></h1>
+        <p class="lead" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Quando Gary desaparece de repente, Bob Esponja e Patrick embarcam numa missão frenética muito além da Fenda do Biquíni para salvar o amigo.</p>
+        <hr class="my-4 bg-light" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Estrelando:Tom Kenny,Bill Fagerbakke,Rodger Bumpass</p>
+        <a data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="btn btn-outline-light btn-lg" href="https://www.omelete.com.br/netflix/criticas/bob-esponja-o-incrivel-resgate-netflix-critica" target="_blank" role="button">Leia mais</a>
       </div>
       <!--/jumbotron-->
 
       <!--cards-->
-<div class="container">
-      <div class="card-columns">
-        <div class="card">
-          <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+<div class="container" >
+      <div class="card-columns" >
+        <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <img class="card-img-top" src="http://t2.gstatic.com/images?q=tbn:ANd9GcQP7UUma_P5RoHlF5A1V8_gksW_hlfYLRwd0AkaWugVik3wvc1W0cBlXboDT8XQ" alt="Imagem de capa do card">
           <div class="card-body">
             <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
             <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
           </div>
         </div>
-        <div class="card p-3">
+        <div class="card p-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <blockquote class="blockquote mb-0 card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer class="blockquote-footer">
@@ -119,15 +123,15 @@
             </footer>
           </blockquote>
         </div>
-        <div class="card">
-          <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <img class="card-img-top" src="http://t3.gstatic.com/images?q=tbn:ANd9GcTuQXT4pBhvquhWlyrxe6acoHxSErvJzFHZyLASs2xNoTB_W7vuzGVTqhi7YGxk" alt="Imagem de capa do card">
           <div class="card-body">
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
             <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
           </div>
         </div>
-        <div class="card bg-primary text-white text-center p-3">
+        <div class="card bg-primary text-white text-center p-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <blockquote class="blockquote mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
             <footer class="blockquote-footer">
@@ -137,18 +141,18 @@
             </footer>
           </blockquote>
         </div>
-        <div class="card text-center">
+        <div class="card text-center"data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <div class="card-body">
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
             <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img" src=".../100px260/" alt="Imagem do card">
+        <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <img class="card-img" src="https://cdn-istoe-ssl.akamaized.net/wp-content/uploads/sites/14/2016/07/c8497b4937019fd0aca65e311af32b0dac507323.jpg" alt="Imagem do card">
         </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
+        <div class="card p-3 text-right" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <blockquote class="blockquote mb-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer class="blockquote-footer">
               <small class="text-muted">
@@ -157,8 +161,8 @@
             </footer>
           </blockquote>
         </div>
-        <div class="card">
-          <div class="card-body">
+        <div class="card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <div class="card-body" >
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
             <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
@@ -172,28 +176,28 @@
 <!--texto e video-->
 
 <div class="row mt-5 mb-5 ">
-    <div class="col-md-6">
+    <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
         <h3>Texto teste</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quidem, consectetur animi corporis itaque quos architecto voluptas nulla obcaecati distinctio ipsum voluptatem nemo nostrum quibusdam placeat pariatur soluta dolorem incidunt.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt possimus quasi sapiente. Nemo sapiente quam rerum tempora, eum, nihil corrupti facilis est cum sit cumque! Laborum, non itaque? Facilis, provident?</p>
     </div>
     
-    <div class="col-md-6">
-        <iframe width="480" height="240" src="https://www.youtube.com/embed/NORzSapZfVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-6 embed-responsive embed-responsive-16by9" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+        <iframe class="embed-responsive-item" width="480" height="240" src="https://www.youtube.com/embed/NORzSapZfVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 </div>
 <!--/texto e video-->
 
  <!--Formulário de contato-->
- <div class="row mb-5 ">
+ <div class="row mb-5 " data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
   <div class="col-md-12 ">
     <h4 class="text-center">
-      Entre em contato com a gente
+      Entre em contato com a gente!
     </h4>
   </div>
 </div>
 
-<div class="row d-flex align-items-center">
+<div class="row d-flex align-items-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
   <div class="col-md-6">
     <form>
       <div class="form-group">
@@ -207,13 +211,13 @@
       </div>
 
       <div class="form-group d-flex justify-content-end">
-        <button class="btn btn-outline-success">Enviar</button>
+        <button class="btn btn-outline-info">Enviar</button>
       </div>
     </form>
   </div>
 
   <div class="col-md-6">
-    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe class="w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 </div>
 
@@ -229,15 +233,15 @@
   <div class="row mb-3">
     <div class="col-md-12 d-flex justify-content-center">
       
-        <a href="https://www.youtube.com/" target="_blank" class="p-3">
-          <img class="tm-social" src="assets/img/youtube.png" alt="Logo do youtube">
+        <a href="https://www.linkedin.com/in/perfilmateuspeixoto/" target="_blank" class="p-3">
+          <img class="tm-social" src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="Logo do linkedin">
         </a>
   
-        <a href="https://www.linkedin.com/" target="_blank" class="p-3">
+        <a href="https://github.com/mateuspeixoto" target="_blank" class="p-3">
           <img class="tm-social" src="assets/img/github.png" alt="Logo do github">
         </a>
   
-        <a href="https://www.instagram.com/" target="_blank" class="p-3">
+        <a href="https://www.instagram.com/mateus_band/" target="_blank" class="p-3">
           <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Intagram">
         </a>
     </div>
@@ -261,6 +265,12 @@
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,});
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
